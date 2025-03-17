@@ -1,0 +1,108 @@
+.container {
+    .title {
+        font-size: 25px;
+        color: var(--textColorHeadingSoft);
+        margin-block-end: 1rem;
+    }
+
+    .writeSection {
+        display: flex;
+        gap: 1.76rem;
+        .textarea {
+            font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 100%;
+            // height: 80%;
+            padding-inline: 1rem;
+            padding-block-start: 0.5rem;
+            resize: vertical;
+            font-size: 16px;
+            max-height: 250px;
+            background-color: rgba(243, 241, 241, 0.11);
+            color: var(--textColor);
+            border-radius: 7px;
+            border: 1px solid rgba(128, 128, 128, 0.37);
+
+            &:focus {
+                outline: 1px solid rgba(57, 117, 228, 0.5);
+            }
+        }
+
+        .buttonComment {
+            max-height: 40px;
+            min-height: 40px;
+            padding: 0.5rem 1.7rem;
+        }
+    }
+
+    .commentsContainer {
+        margin-block-start: 2.5rem;
+        border: 1px solid rgba(128, 128, 128, 0.26);
+            border-radius: 10px;
+            padding: 1rem;
+        .commentBody {
+            border: 1px solid rgba(128, 128, 128, 0.26);
+            padding: 1rem 0.5rem;
+            margin-block: 1rem;
+            padding-inline-end: 1.5rem;
+            border-radius: 10px;
+            .userDetails {
+                display: flex;
+                gap: 1rem;
+                padding-block-end: 0.75rem;
+                .userCommentImage {
+                    border: 1px solid var(--softTextColor);
+                    border-radius: 50%;
+                    padding: 0.15rem;
+                }
+                .userInfo {
+                    color: gray;
+                    font-size: 14px;
+                    display: flex;
+                    flex-direction: column;
+                    // align-items: center;
+                        // justify-content: center;
+                    gap: 0.25rem;
+
+                    .date {
+                        font-size: 12px;
+                    }
+                }
+            }
+            &:hover {
+                background: linear-gradient(90deg, 
+                rgba(110, 203, 240, 0.05) 1%, 
+                rgba(0,212,255,0) 100%);
+            }
+            .commentSection {
+                display: flex;
+                justify-content: space-between;
+                .commentContent {
+                    align-items: start;
+                    padding-inline-start: 3.5rem;
+                }
+
+                .deleteComment {
+                    font-size: 12px;
+                    border-radius: 50%;
+                    padding: 0.45rem;  
+                    // outline: 1px solid rgb(129, 13, 13);
+                    border: none;
+                    outline: none;
+                    // width: 30px;
+                    // height: 30px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all ease-in-out 100ms;
+                    &:hover {
+                        background-color: rgba(192, 54, 54, 0.247);
+                        transform: scale(0.95);
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

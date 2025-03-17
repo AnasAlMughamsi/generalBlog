@@ -1,0 +1,68 @@
+.container {
+    .blogTitle {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        padding-block: 2.5rem;
+        font-family: var(Roboto);
+
+        &:focus {
+            // border: 0.5px solid rgb(228, 14, 14);
+            outline: none;
+        }
+        &::placeholder {
+            color: #b3b3b1;
+            // font-size: ;
+        }
+    }
+    .editor {
+        display: flex;
+        button {
+            all: unset;
+            cursor: pointer;
+        }
+        
+        .addContainer {
+            display: flex;
+            gap: 2rem;
+            margin-inline-start: 3rem;
+
+            .addButton {
+                transition: all ease-in 5s;
+                cursor: pointer;
+              
+                .fileIcon {
+                    cursor: pointer;
+                    transition: all ease-in-out 150ms;
+                    &:active {
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+    .textArea {
+        border: 1px solid red;
+        margin-block: 2rem;
+        padding-block: 1rem;
+    }
+    .publish {
+        padding: 0.75rem 1.25rem;
+
+        // NOTE: Reconsider the position 
+        // position: absolute;
+        // top: 30px;
+        // right: 20px;
+        background-color: #1a8917;
+        color: white;
+        border-radius: 2rem;
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+    
+}

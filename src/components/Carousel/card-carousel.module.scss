@@ -1,0 +1,167 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-block-start: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    .carousel {
+        // border: 1px solid blue;
+        overflow: hidden;
+        // padding: 2rem 7rem;
+        // width: 80%;
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-block-end: 2rem;
+        }
+        .swiperSlide {
+            padding-block: 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            transition: 0.3s;
+            padding-block-end: 1.5rem;
+            cursor: pointer;
+            &:hover {
+                // transform: scale(1.005);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 7px 15px -2px;
+            }
+           
+          
+            .image {
+                display: block;
+                object-fit: cover;
+                border-radius: 10px;
+                display: block;
+                flex-grow: 0;
+                flex-shrink: 0;
+                transition: all 0.3s ease-in-out;
+
+            }
+            .cardContent {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding-inline: 2rem;
+                padding-block-start: 1rem;
+                padding-block-end: 0.15rem;
+                text-align: start;
+                .category {
+                    padding: 0.5rem 1.75rem;
+                    border-radius: 7px;
+                    color: rgb(207, 167, 134);
+                    background-color:  rgb(247, 245, 244);
+                }
+                h1 {
+                    padding-block-start: 1.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                p {
+                    all: unset;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+            
+          
+        }
+    }
+    .buttonContainer {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        gap: 1rem;
+        border-radius: 7px;
+        // transition: all 200ms step-start;
+        outline-color: rgba(245, 227, 210, 0.562);
+
+  
+        
+        &.noBorder {
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 0.5rem 2rem !important;
+            border: none;
+            background-color: transparent;
+
+            &:hover {
+          
+
+                background-color: #f5f3f1;
+                box-shadow: none;
+                border: none
+                
+            }
+        }
+    }
+
+
+}
+
+
+
+.swiper-wrapper {
+    width: 800px !important; /* Change width */
+    // max-width: 400px !important;
+    padding: 4rem !important;
+}
+
+
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1800px;
+       
+        .carousel {
+ 
+            .swiperSlide {
+                padding-inline: 1.5rem;
+                padding-block-end: 2rem;
+                // background-color: red;
+            }
+            .card {
+                width: 500px;
+                padding-block-end: 1.5rem;
+                .image {
+                    // width: 400px;
+                    // border-bottom: 1px solid #dab087;
+                }
+                
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+  
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 640px) {
+    
+ 
+}

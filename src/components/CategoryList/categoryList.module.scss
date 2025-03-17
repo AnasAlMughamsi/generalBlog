@@ -1,0 +1,164 @@
+.container {
+    margin-block-start: 14rem !important;
+
+
+    .header {
+        font-size: 26px;
+    }
+
+    .lists {
+        margin-block-start: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+        .list {
+            display: flex;
+            // padding: 1rem 3rem;
+            height: 70px;
+            width: 15%;
+            gap: 10px;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: capitalize;
+            position: relative;
+            background: none;
+            border: none;
+            font-size: 18px;
+            background: rgba(0,0,0,0.09);
+
+            img  {
+                border-radius: 50%
+            }
+
+            p {
+                display: block;
+                border-radius: 7px;
+            }
+            &:hover {
+                filter: brightness(50%);
+    
+                box-shadow: rgba(var(--outline-color-light)) 0px 1px 3px 0px,
+                            rgba(var(--outline-color-light_2)) 0px 0px 0px 1px;
+     
+                transition: all ease-in-out 150ms;
+            } 
+
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        margin-block-start: 3rem;
+
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .container {
+        .lists {
+            justify-content: space-around;
+            .list {
+                width: 20%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        .lists {
+            .list {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        .lists {
+            .list {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        .lists {
+            // justify-content: st;
+            .list {
+                width: 100%;
+            }
+        }
+    }
+}
+// .list::before, .list::after{
+//     content:"";
+//     width: 0;
+//     height: 2px;
+//     position: absolute;
+//     transition: all 0.2s linear;
+//     background: rgba(255,255,255,0.5);
+//     border-radius: 7px;
+
+// }
+
+// .p::before, .p::after{
+//     content:"";
+//     width:2px;
+//     height:0;
+//     position: absolute;
+//     transition: all 0.2s linear;
+//     background: rgba(255,255,255,0.5);
+//     border-radius: 7px;
+
+// }
+  
+// .list:hover::before, .list:hover::after{
+//     width: 100%;
+//     border-radius: 7px;
+
+// }
+// .list:hover p::before, .list:hover p::after{
+//     height: 100%;
+//     border-radius: 7px;
+
+// }
+
+// /*----- .list 1 -----*/
+// .list::before, .list::after{
+//     transition-delay: 0.2s;
+// }
+// .list p::before, .list p::after{
+//     transition-delay: 0s;
+// }
+// .list::before{
+//     right: 5;
+//     top: 0;
+
+// }
+// .list::after{
+//     left: 5;
+//     bottom: 0;
+
+// }
+// .list p::before{
+//     left: 0;
+//     top: 0;
+// }
+// .list p::after{
+//     right: 10;
+//     bottom: 0;
+// }
+// .list:hover::before, .list:hover::after{
+//     transition-delay: 0s;
+// }
+// .list:hover p::before, .list:hover p::after{
+//     transition-delay: 0.2s;
+// }
