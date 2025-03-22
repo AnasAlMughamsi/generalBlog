@@ -8,6 +8,7 @@
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
+    width: 1800px;
     .text {
         h4 {
             font-size: 20px;
@@ -59,6 +60,13 @@
             // border: 1px solid red;
             outline: none;
             padding: 0 1rem;
+            border: 1px solid transparent;
+            transition: all 0.2s ease-in-out;
+            &:focus {
+                border: 1px solid #cc9465;
+                border-width: 1px;
+                border-style: solid;
+            }
         }
         button {
             border-radius: 7px;
@@ -71,15 +79,20 @@
             color: white;
             text-transform: uppercase;
             font-weight: 700;
+
+            &:hover {
+                background-color: #b37e4e;
+                // box-shadow: none;
+            }
         }
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1790px) {
     .container {
         // margin-block-start: 10rem;
-        width: 1800px;
-        padding: 3rem;
+        width: 1500px;
+        padding: 2rem;
        
         .input {
             input {
@@ -91,12 +104,14 @@
 }
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1550px) {
     .container {
-        
+        width: 1200px;
 
     }
 }
+
+
 
 @media screen and (max-width: 1280px) {
     .container {

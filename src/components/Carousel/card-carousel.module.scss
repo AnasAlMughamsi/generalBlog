@@ -9,12 +9,9 @@
     margin-block-start: 3rem;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    width: 1800px;
     .carousel {
-        // border: 1px solid blue;
         overflow: hidden;
-        // padding: 2rem 7rem;
-        // width: 80%;
         h1 {
             font-size: 2rem;
             font-weight: 600;
@@ -31,6 +28,7 @@
             box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
             transition: 0.3s;
             padding-block-end: 1.5rem;
+            width: 450px;
             cursor: pointer;
             &:hover {
                 // transform: scale(1.005);
@@ -125,9 +123,9 @@
 
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1790px) {
     .container {
-        width: 1800px;
+        width: 1500px;
        
         .carousel {
  
@@ -137,10 +135,34 @@
                 // background-color: red;
             }
             .card {
-                width: 500px;
+                width: 450px;
                 padding-block-end: 1.5rem;
                 .image {
                     // width: 400px;
+                    // border-bottom: 1px solid #dab087;
+                }
+                
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .container {
+        width: 1250px;
+       
+        .carousel {
+ 
+            .swiperSlide {
+                padding-inline: 1.5rem;
+                padding-block-end: 2rem;
+                // background-color: red;
+            }
+            .card {
+                width: 370px;
+                padding-block-end: 1.5rem;
+                .image {
+                    width: 370px;
                     // border-bottom: 1px solid #dab087;
                 }
                 

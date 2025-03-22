@@ -113,6 +113,12 @@ const CarousalUI = () => {
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper;
                     }}
+                    // breakpoints={{
+                    //     1550: {
+                    //         slidesPerView: 3,
+                    //         spaceBetween: 40,
+                    //     },
+                    // }}
                 // loop={true}
 
                 >
@@ -121,7 +127,7 @@ const CarousalUI = () => {
                             <div className={styles.card} >
 
                                 <Image src={`/images/${item.img ? item.img : "default.jpg"}`} alt='image-hero'
-                                    className={styles.image} width={500} height={450}
+                                    className={styles.image} width={450} height={400}
                                     onError={() => {
                                         defaultImageUrl;
                                     }}
