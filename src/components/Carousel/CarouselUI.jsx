@@ -113,12 +113,12 @@ const CarousalUI = () => {
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper;
                     }}
-                    // breakpoints={{
-                    //     1550: {
-                    //         slidesPerView: 3,
-                    //         spaceBetween: 40,
-                    //     },
-                    // }}
+                    breakpoints={{
+                        1500: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                        },
+                    }}
                 // loop={true}
 
                 >
@@ -135,7 +135,7 @@ const CarousalUI = () => {
                                 <div className={styles.cardContent}>
                                     <span className={styles.category}>{item.categorySlug}</span>
                                     <h1>{item.title}</h1>
-                                    <div>{moment(item.createdAt).format("LL")}</div>
+                                    <span className={styles.date}>{moment(item.createdAt).format("LL")}</span>
                                 </div>
                             </div>
                         </SwiperSlide>
